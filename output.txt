@@ -1,0 +1,83 @@
+No policy (sequential):
+Sequence size = 100; time = 0.0228 ms
+Sequence size = 1000; time = 0.0174 ms
+Sequence size = 10000; time = 0.1643 ms
+Sequence size = 100000; time = 2.0547 ms
+Sequence size = 1000000; time = 13.7627 ms
+
+Sequence size = 100
+  Sequential (seq): 0.0031 ms
+  Parallel (par): 0.2925 ms
+  Unsequenced (unseq): 0.0022 ms
+  Parallel Unsequenced (par_unseq): 0.0306 ms
+
+Sequence size = 1000
+  Sequential (seq): 0.0176 ms
+  Parallel (par): 0.1686 ms
+  Unsequenced (unseq): 0.0171 ms
+  Parallel Unsequenced (par_unseq): 0.1818 ms
+
+Sequence size = 10000
+  Sequential (seq): 0.1357 ms
+  Parallel (par): 0.1983 ms
+  Unsequenced (unseq): 0.1637 ms
+  Parallel Unsequenced (par_unseq): 0.1929 ms
+
+Sequence size = 100000
+  Sequential (seq): 1.3256 ms
+  Parallel (par): 0.5281 ms
+  Unsequenced (unseq): 1.2973 ms
+  Parallel Unsequenced (par_unseq): 0.6331 ms
+
+Sequence size = 1000000
+  Sequential (seq): 13.2286 ms
+  Parallel (par): 2.5166 ms
+  Unsequenced (unseq): 13.0256 ms
+  Parallel Unsequenced (par_unseq): 1.6451 ms
+
+Multithreaded for_each (variable K):
+K        Seq size        Time(ms)
+----------------------------------------
+2        100             1.9991
+2        1000            0.6339
+2        10000           0.6407
+2        100000          1.5631
+2        1000000         8.7530
+4        100             0.8304
+4        1000            1.0780
+4        10000           1.2245
+4        100000          1.6183
+4        1000000         6.8389
+6        100             1.5498
+6        1000            1.5344
+6        10000           1.8983
+6        100000          2.0824
+6        1000000         5.6720
+8        100             2.4266
+8        1000            2.2623
+8        10000           2.2099
+8        100000          2.6370
+8        1000000         6.2797
+10       100             3.0673
+10       1000            2.7666
+10       10000           3.1036
+10       100000          3.5428
+10       1000000         7.4320
+12       100             2.7678
+12       1000            2.9206
+12       10000           3.3589
+12       100000          3.5788
+12       1000000         6.8728
+14       100             5.2981
+14       1000            3.6344
+14       10000           4.0461
+14       100000          4.5806
+14       1000000         7.1789
+16       100             3.2189
+16       1000            3.8533
+16       10000           4.4570
+16       100000          4.9543
+16       1000000         7.2681
+-----------------------------------
+Best K = 4 (avg time = 2.3180 ms)
+Hardware : 16
